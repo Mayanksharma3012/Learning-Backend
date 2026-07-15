@@ -11,3 +11,9 @@ app.use(express.json({limit: '30kb'}))
 app.use(express.urlencoded())
 app.use(express.static('public'))
 app.use(cookieParser())
+
+// routes import 
+import { userRegister } from "./controllers/user.controller.js";
+
+
+app.use('/users', userRegister)

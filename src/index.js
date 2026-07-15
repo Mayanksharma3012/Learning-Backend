@@ -15,7 +15,7 @@ connectDB()
     }  
     )
 })
-.catch(err, () => {
+.catch( (err) => {
   console.log('the error in MONGODB is:', err)
 }
 )
